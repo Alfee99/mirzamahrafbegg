@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  overflow:auto;
+}
+
+
+.navbar {
+	background-color: #090009;
+}
+.nav-links {
+	list-style:none;  /* Remove default bullets */
+	padding: 0;         /* Reset default padding */
+	margin: 0 auto;          /* Reset default margin */
+	display: flex;      /* Display items horizontally */
+	justify-content: center;
+}
+.nav-links li{
+	padding: 10px 20px;
+	margin: 0 5px;
+	
+}
+
+.problem-bar{
+	background-color: #D9EEE1;
+}
+.problem-button {
+	margin: 0.05%;
+    padding-top: 10px;    /* Padding on top */
+    padding-bottom: 10px; /* Padding on bottom */
+    padding-left: 1%;   /* Padding on left */
+    padding-right: 1%;  /* Padding on right */
+    /* Other styling */
+    background-color: #04AA6D; /* background */
+    color: white;              /* White text */
+    border-color: black;             /* Remove border */
+    border-radius: 5px;        /* Rounded corners */
+    cursor: pointer; 
+	text-overflow: ellipsis;
+	white-space: nowrap; /* Prevents wrapping to next line */
+    overflow: hidden; 
+	transition: text-overflow 0.2s ease-in-out;
+}
+
+.problem-button:hover {
+	text-overflow: visible;
+    background-color: #06032e; /* Darker green on hover */
+}
+
+body {
+	text-align:center;
+	background-color:#ffffff ;
+}
+
+div {
+	border:1px solid grey;
+	margin-top:20px;
+}
+
+#problem {
+	width: auto;/* in Ex1, add one line here to specify the width of 
+	this element relative to the width of the viewport */ 
+	background-color:   #02623f;
+	margin:auto;
+	margin-top:20px;
+	height:80px;
+	text-align:left;
+	color:rgb(255, 255, 255);
+	font-family:Luminary, cursive;
+	font-size:15px;
+	padding-left:20px;
+	padding-right:20px;
+	width: 90vw; 
+	border-radius: 5px;
+}
+header{
+	color: rgb(0, 0, 0);
+	font-size: 25px;
+	background-color: #ffffff;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+}
+footer{
+	margin-top:20px;
+	text-align:center;
+	font-size:10px;
+}
+
+
+/* Responsive layout - makes the three columns stack 
+on top of each other instead of next to each other */
+  img {
+    width: 100%;
+    height: auto;
+	margin-top:5px;
+	padding: 2px;
+	display:none;
+	border-radius: 5px;
+	/* in Ex1, add one line here such that the img does not display */
+	 
+  }
+
+.column1-design {
+	background-color: #282A35;
+	border-radius: 5px;
+  }
+
+.column2-jsSolution {
+	background-color:  #282A35;
+	border-radius: 5px;
+}
+
+.column3-otherSolution {
+	background-color: #282A35;
+	border-radius: 5px;
+}
+
+  [class*="column"] { 
+     width: 100%;
+     display:inline-block;
+     height:60vh;
+  }
+
+  header nav button{ 
+	  width:18%;
+	  font-size:8px;
+  }
+
+@media screen and (min-width:600px) {
+  [class*="column"] {
+    width:32%;
+  }
+  
+  header nav button{ 
+	width:9%;
+	font-size:1.2vw;
+  }
+}
+
